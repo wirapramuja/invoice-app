@@ -8,7 +8,6 @@ import React, { SyntheticEvent, useState } from 'react';
 import { createAction } from '@/app/actions';
 import SubmitButton from '@/components/SubmitButton';
 
-import Form from 'next/form';
 import Container from '@/components/Container';
 
 const NewPage = () => {
@@ -28,7 +27,7 @@ const NewPage = () => {
           <h1 className="text-3xl font-bold">Invoices</h1>
         </div>
 
-        <Form
+        <form
           onSubmit={handleOnSubmit}
           action={createAction}
           className="grid gap-4 max-w-xs"
@@ -63,7 +62,7 @@ const NewPage = () => {
           <div>
             <SubmitButton />
           </div>
-        </Form>
+        </form>
       </Container>
     </main>
   );
