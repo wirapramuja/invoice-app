@@ -9,7 +9,6 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 
 import { createPayment, updateStatusAction } from '@/app/actions';
-import { auth } from '@clerk/nextjs/server';
 import { db } from '@/db';
 import { Customers, Invoices } from '@/db/schema';
 import { and, eq, isNull } from 'drizzle-orm';
